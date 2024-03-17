@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title> <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio
+    </h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<header>
+    <h1>Details
+    </h1>
+
+    <form id="form" >
+
+        <p class="cour c1">Your email address</p>
+        <div class="input_group">
+            <input oninput="courchange()"  type="email" name="email" placeholder="Your email address" required>
+        </div>
+        <p class="cour c2">Your full name</p>
+        <div class="input_group">
+            <input oninput="nomchange()"  type="name" name="name" placeholder="Your full name" required>
+        </div>
+        <p class="cour c3">Your project</p>
+        <div class="input_group">
+            <textarea oninput="projetchange()"  name="message"  placeholder="How can I help you ?" required></textarea>
+        </div>
+        <p id="err"></p>
+        <p id="succ"></p>
+        <div class="input_group">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Insert your brief introduction here.</p>
+    <p class="cour c1"></p>
+    <div class="input_group">
+        <textarea oninput="aboutme()"  type="message" name="message" placeholder="Introduction" required></textarea>
+    </div>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+
+        <p class="cour c1"></p>
+        <div class="input_group">
+            <textarea oninput="about your project()"  type="message" name="message" placeholder="about your project" required></textarea>
+        </div>
+
+    </div> <div class="project">
+    <h3>Project 2</h3>
+    <p>Description of Project 2.</p>
+    <p class="cour c1"></p>
+    <div class="input_group">
+        <textarea oninput="about your project()"  type="message" name="message" placeholder="about your project" required></textarea>
+    </div>
+
+</div> <!-- Add more projects as needed --> </section>
+<section id="contact"> <h2>Contact Me <h3> Let's work together </h3></h2> <p>Email: nirvikaagrawal2003@gmail.com</p>
+
+    <p>Phone: 789-828-0263</p> </section> <footer> <p>&copy; 2024 My Portfolio</p>
+</footer>
+</body>
+</html>
